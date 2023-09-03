@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'jj',
+  title: 'JJ',
   tagline: 'Remote HTTP Mock',
   url: 'https://jj.vedro.io',
   baseUrl: '/',
@@ -57,7 +57,7 @@ const config = {
         maxHeadingLevel: 4,
       },
       navbar: {
-        title: 'jj',
+        title: 'JJ',
         items: [
           {
             type: 'doc',
