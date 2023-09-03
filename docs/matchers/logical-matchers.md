@@ -37,7 +37,7 @@ jj.match_all([
 
 This complex mock will activate only when all of the specified conditions are met.
 
-### The One-liner for Multiple Conditions
+### The One-Liner for Multiple Conditions
 
 JJ also provides a convenient shorthand method named `match`. This function is essentially a quick way to specify multiple conditions in a single line:
 
@@ -45,4 +45,4 @@ JJ also provides a convenient shorthand method named `match`. This function is e
 jj.match("*", "/", params={"locale": "en_US"}, headers={"x-request-id": "0fefbf48"})
 ```
 
-In this example, the matcher will activate for any HTTP method, as long as the path is `/`, the locale is set to `en_US`, and the `x-request-id` header has the value `0fefbf48`.
+In this example, the matcher will activate for any HTTP method, as long as the path is `/`, the locale query parameter is set to `en_US`, and the `x-request-id` header has the value `0fefbf48`.

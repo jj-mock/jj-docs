@@ -74,8 +74,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Quick Start',
-                to: '/docs/quick-start',
+                label: 'Matchers',
+                to: '/docs/matchers',
+              },
+              {
+                label: 'Responses',
+                to: '/docs/responses',
               },
             ],
           },

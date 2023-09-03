@@ -22,6 +22,19 @@ const sidebars = {
         'matchers/logical-matchers',
       ],
     },
+    {
+      type: 'category',
+      label: 'Responses',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        slug: 'responses',
+      },
+      items: [
+        'responses/response',
+        'responses/delayed-response',
+      ],
+    },
   ],
 
 };
