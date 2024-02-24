@@ -16,7 +16,7 @@ mock = await mocked(matcher, response)
 
 #### Fetching History for Persistent Mocks
 
-To access the history of a persistent mock, you must explicitly fetch it.
+To access the [history](/docs/history) of a persistent mock, you must explicitly fetch it.
 
 ```python
 mock = await mocked(matcher, response)

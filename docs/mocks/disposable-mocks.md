@@ -18,7 +18,7 @@ async with mocked(matcher, response) as mock:
 
 #### Accessing History for Disposable Mocks
 
-The history of a disposable mock can be accessed immediately after exiting the `with` block.
+The [history](/docs/history) of a disposable mock can be accessed immediately after exiting the `with` block.
 
 ```python
 async with mocked(matcher, response) as mock:
