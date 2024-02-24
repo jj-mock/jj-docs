@@ -61,6 +61,18 @@ const sidebars = {
         'features/expiration-policy',
       ],
     },
+    {
+      type: 'category',
+      label: 'Integrations',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        slug: 'integrations',
+      },
+      items: [
+        'integrations/d42',
+      ],
+    },
   ],
 
 };
