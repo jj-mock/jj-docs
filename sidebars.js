@@ -33,6 +33,7 @@ const sidebars = {
       items: [
         'matchers/request-matchers',
         'matchers/logical-matchers',
+        'matchers/attribute-matchers',
       ],
     },
     {
