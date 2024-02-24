@@ -34,6 +34,7 @@ const sidebars = {
         'matchers/request-matchers',
         'matchers/logical-matchers',
         'matchers/attribute-matchers',
+        'matchers/custom-matchers',
       ],
     },
     {
