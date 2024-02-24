@@ -49,6 +49,18 @@ const sidebars = {
         'responses/relay-response',
       ],
     },
+    {
+      type: 'category',
+      label: 'Features',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        slug: 'features',
+      },
+      items: [
+        'features/expiration-policy',
+      ],
+    },
   ],
 
 };

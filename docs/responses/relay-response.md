@@ -2,8 +2,6 @@
 
 `RelayResponse` is designed to forward incoming requests to a specified target URL. It is particularly useful for creating proxy mocks to test real server responses without directly hitting the target server. This enables seamless testing against external services by relaying responses from a target URL back to the client.
 
-### Usage
-
 To use `RelayResponse`, define a matcher for the requests to be forwarded and specify the target URL:
 
 ```python
