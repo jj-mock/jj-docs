@@ -1,6 +1,10 @@
 ---
 id: quick-start
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Quick Start
 
 [JJ](https://pypi.org/project/jj/) is a remote HTTP mock library that simulates HTTP responses for incoming requests. It allows you to define conditions for incoming HTTP requests and specify the responses that should be returned. 
@@ -34,6 +38,9 @@ Either of these methods will start the JJ server, ready to handle incoming mock 
 
 Once the server is running, you can define the matchers (rules) and responses that JJ should use. Here's an example:
 
+<Tabs>
+  <TabItem value="sync" label="sync" default>
+
 ```python
 import sh
 import jj
@@ -48,6 +55,27 @@ def test_curl():
 
     assert res == "[]"
 ```
+
+  </TabItem>
+  <TabItem value="async" label="async">
+
+```python
+import sh
+import jj
+from jj.mock import mocked
+
+async def test_curl():
+    matcher = jj.match("GET", "/users")
+    response = jj.Response(status=200, json=[])
+
+    async with mocked(matcher, response) as mock:
+        res = sh.curl("-s", "http://localhost:8080/users")
+
+    assert res == "[]"
+```
+
+  </TabItem>
+</Tabs>
 
 ## Breaking Down the Concepts
 

@@ -11,6 +11,19 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Mocks',
+      collapsed: false,
+      link: {
+        type: 'generated-index',
+        slug: 'mocks',
+      },
+      items: [
+        'mocks/disposable-mocks',
+        'mocks/persistent-mocks',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Matchers',
       collapsed: false,
       link: {
@@ -33,6 +46,7 @@ const sidebars = {
       items: [
         'responses/response',
         'responses/delayed-response',
+        'responses/relay-response',
       ],
     },
   ],
