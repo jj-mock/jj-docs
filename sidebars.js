@@ -60,6 +60,7 @@ const sidebars = {
       },
       items: [
         'features/expiration-policy',
+        'features/low-level-api',
       ],
     },
     {
