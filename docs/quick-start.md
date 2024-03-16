@@ -19,6 +19,23 @@ The library uses a client-server architecture, making it possible to run a serve
 
 Before creating mocks, you need to ensure the JJ server is up and running.
 
+<Tabs>
+  <TabItem value="CLI">
+
+```shell
+$ jj --port 8080
+```
+
+  </TabItem>
+    <TabItem value="Docker">
+
+```shell
+$ docker run -p 8080:80 vedrouniverse/jj
+```
+
+  </TabItem>
+  <TabItem value="Python">
+
 ```python
 import jj
 from jj.mock import Mock
@@ -26,11 +43,8 @@ from jj.mock import Mock
 jj.serve(Mock(), port=8080)
 ```
 
-Alternatively, you can run the server using [Docker](https://www.docker.com/) with the following command:
-
-```shell
-$ docker run -p 8080:80 vedrouniverse/jj
-```
+  </TabItem>
+</Tabs>
 
 Either of these methods will start the JJ server, ready to handle incoming mock requests at `http://localhost:8080`.
 
@@ -114,4 +128,4 @@ The mock is registered upon entering the `with` block and deregistered upon exit
 
 ## Flexibility in Deployment
 
-Since JJ uses HTTP for client-server communication, it offers extreme flexibility in deployment options. You can run all the components—mock server, application under test, and test script—in a single process, separate threads, or even distribute them across multiple machines. This makes it a great fit for both small and large-scale testing environments.
+Since JJ uses HTTP for client-server communication, it offers extreme flexibility in deployment options. You can run all the components — mock server, application under test, and test script — in a single process, separate threads, or even distribute them across multiple machines. This makes it a great fit for both small and large-scale testing environments.

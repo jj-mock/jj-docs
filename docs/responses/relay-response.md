@@ -11,5 +11,5 @@ response = jj.RelayResponse(target="https://httpbin.org")
 
 With this setup, all GET requests to your mock server are forwarded to `https://httpbin.org`, and the responses are relayed back to the original requester. For example:
 
-- `GET http://localhost:8080/html` is forwarded to `GET https://httpbin.org/html`.
-- `GET http://localhost:8080/status/500` is forwarded to `GET https://httpbin.org/status/500`.
+- <code title="GET http://localhost:8080/html">GET /html</code> → <code>GET https://httpbin.org/html</code>
+- <code title="GET http://localhost:8080/status/500">GET /html</code> → <code>GET https://httpbin.org/status/500</code>
