@@ -1,4 +1,4 @@
-# Extended Logs
+# Detailed Logging
 
 By default, the mock server logs basic information, showing the HTTP method and path for requests, and the status code for responses. For example:
 
