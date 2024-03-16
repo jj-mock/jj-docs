@@ -61,6 +61,7 @@ const sidebars = {
       },
       items: [
         'features/expiration-policy',
+        'features/extended-logs',
         'features/low-level-api',
       ],
     },
