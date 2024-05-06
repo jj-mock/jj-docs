@@ -25,6 +25,9 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        sitemap: {
+          filename: 'sitemap.xml',
+        },
       }),
     ],
   ],
