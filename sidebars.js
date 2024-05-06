@@ -25,7 +25,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Matchers',
-      collapsed: false,
+      collapsed: true,
       link: {
         type: 'generated-index',
         slug: 'matchers',
@@ -40,7 +40,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Responses',
-      collapsed: false,
+      collapsed: true,
       link: {
         type: 'generated-index',
         slug: 'responses',
@@ -82,4 +82,4 @@ const sidebars = {
 
 };
 
-module.exports = sidebars;
+export default sidebars;
