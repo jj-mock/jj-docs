@@ -6,7 +6,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 const config = {
   title: 'JJ',
   tagline: 'Remote HTTP Mock',
-  url: 'https://jj.vedro.io',
+  url: 'https://jj-mock.io',
   baseUrl: '/',
   trailingSlash: false,
   onBrokenLinks: 'throw',
