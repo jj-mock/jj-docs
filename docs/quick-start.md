@@ -103,7 +103,7 @@ The Matcher is the cornerstone of any mock you set up. It specifies what conditi
 matcher = jj.match("GET", "/users")
 ```
 
-In this example, the matcher will look for HTTP GET requests aimed at the `/users` URL path.
+In this example, the matcher will look for HTTP GET requests aimed at the `/users` URL path. You can explore more matchers and their usage in the [Matcher documentation](/docs/matchers).
 
 ### 2. Response
 
@@ -113,7 +113,7 @@ The Response object is what JJ returns when the conditions specified in the Matc
 response = jj.Response(status=200, json=[])
 ```
 
-In this example, when a match occurs, the server will return an HTTP 200 status code along with an empty JSON array as the response body.
+In this example, when a match occurs, the server will return an HTTP 200 status code along with an empty JSON array as the response body. For more information on different types of responses, check out the [Response documentation](/docs/responses).
 
 ### 3. Remote Handler
 
@@ -125,6 +125,8 @@ with mocked(matcher, response) as mock:
 ```
 
 The mock is registered upon entering the `with` block and deregistered upon exiting it. This means it matches requests only within this block.
+
+If you do not want the mock to be deregistered upon exiting the `with` block, you can use [persistent mocks](/docs/mocks/persistent-mocks) instead. Persistent mocks remain active until they are explicitly deregistered.
 
 ## Flexibility in Deployment
 
