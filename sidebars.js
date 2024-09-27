@@ -61,6 +61,7 @@ const sidebars = {
       },
       items: [
         'features/expiration-policy',
+        'features/stacked-mocks',
         'features/mock-inspection',
         'features/detailed-logging',
         'features/low-level-api',
