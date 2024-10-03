@@ -1,6 +1,3 @@
----
-id: logical-matchers
----
 # Logical Matchers
 
 ## Combining Matchers

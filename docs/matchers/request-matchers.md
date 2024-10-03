@@ -1,6 +1,3 @@
----
-id: request-matchers
----
 # Request Matchers
 
 ## Matching HTTP Methods
