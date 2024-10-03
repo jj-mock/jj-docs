@@ -49,6 +49,7 @@ const sidebars = {
         'responses/response',
         'responses/delayed-response',
         'responses/relay-response',
+        'responses/template-response',
       ],
     },
     {
