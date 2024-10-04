@@ -70,8 +70,20 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Cookbook',
+      collapsed: true,
+      link: {
+        type: 'generated-index',
+        slug: 'cookbook',
+      },
+      items: [
+        'cookbook/mocking-https-requests',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Integrations',
-      collapsed: false,
+      collapsed: true,
       link: {
         type: 'generated-index',
         slug: 'integrations',
