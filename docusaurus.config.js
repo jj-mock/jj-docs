@@ -90,7 +90,7 @@ const config = {
             items: [
               {
                 label: 'Discussions',
-                href: 'https://github.com/tsv1/jj/discussions',
+                href: 'https://github.com/orgs/jj-mock/discussions',
               },
             ],
           },
@@ -99,7 +99,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/tsv1/jj',
+                href: 'https://github.com/jj-mock/jj-d42',
               },
               {
                 label: 'PyPi',
