@@ -73,3 +73,15 @@ jj.match_header("Authorization", exists)
 ```
 
 This example ensures a match if the `Authorization` header exists, regardless of its value, highlighting the matcher's role in verifying attribute presence.
+
+### NotExistMatcher
+
+The `NotExistMatcher` is used to ensure that a request attribute is absent. When matching, if the specified attribute exists in the request, the matcher fails. This is particularly useful for filtering out requests that include attributes you wish to exclude.
+
+```python
+from jj.matchers import exists
+
+jj.match_param("access_token", not_exists)
+```
+
+In this example, the matcher passes only if the `access_token` parameter is not present in the HTTP request.
