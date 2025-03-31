@@ -99,7 +99,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/jj-mock/jj-d42',
+                href: 'https://github.com/jj-mock/jj',
               },
               {
                 label: 'PyPi',
