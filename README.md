@@ -1,6 +1,6 @@
-# jj docs
+# JJ Docs
 
-Docs for [jj remote mock](https://pypi.org/project/jj/)
+Docs for [JJ](https://pypi.org/project/jj/) remote mock.
 
 ## Development
 
