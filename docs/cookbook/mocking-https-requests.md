@@ -9,7 +9,7 @@ First, configure Docker to run both the JJ Mock server and an SSL proxy.
 ```yaml
 services:
   mock:
-    image: vedrouniverse/jj
+    image: ghcr.io/jj-mock/jj
     ports:
       - "8080:80"
 

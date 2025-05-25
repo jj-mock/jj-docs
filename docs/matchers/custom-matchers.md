@@ -303,7 +303,7 @@ $ jj --port 8080 --use-matchers starts_with_matcher.py
 $ docker run \
   -p 8080:80 \  # Map port 8080 on the host to port 80 in the container
   -v ./starts_with_matcher.py:/app/starts_with_matcher.py \  # Mount the custom matcher script into the container
-  vedrouniverse/jj \  # Use the JJ mock server Docker image
+  ghcr.io/jj-mock/jj \  # Use the JJ mock server Docker image
   --use-matchers /app/starts_with_matcher.py  # Instruct JJ to load the custom matcher
 ```
 
